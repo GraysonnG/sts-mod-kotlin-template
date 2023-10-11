@@ -1,10 +1,10 @@
 package textures
 
-import ExampleMod
+import ExampleModInitializer
 import com.badlogic.gdx.graphics.Texture
 
 object Textures {
-  private fun getString(folder: String, texture: String) = ExampleMod.makePath("$folder/") + texture
+  private fun getString(folder: String, texture: String) = ExampleModInitializer.makePath("$folder/") + texture
   val acts = TextureGetter("acts")
   val cards = TextureGetter("cards")
   val events = TextureGetter("events")

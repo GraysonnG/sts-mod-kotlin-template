@@ -1,6 +1,6 @@
 package textures
 
-import ExampleMod
+import ExampleModInitializer
 import com.badlogic.gdx.graphics.Texture
 
 class TextureGetter(private val folder: String) {
@@ -16,6 +16,6 @@ class TextureGetter(private val folder: String) {
   }
 
   companion object {
-    private fun getString(folder: String, texture: String) = ExampleMod.makePath("$folder/") + texture
+    private fun getString(folder: String, texture: String) = ExampleModInitializer.makePath("$folder/") + texture
   }
 }

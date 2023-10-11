@@ -37,7 +37,7 @@ fun Int.deltaTime(): Float = this * Gdx.graphics.rawDeltaTime
 fun Float.deltaTime(): Float = this * Gdx.graphics.rawDeltaTime
 fun Double.deltaTime(): Float = this.toFloat() * Gdx.graphics.rawDeltaTime
 
-fun String.makeID(): String = "${ExampleMod.modid}:$this"
+fun String.makeID(): String = "${ExampleModInitializer.modid}:$this"
 
 fun Texture.asAtlasRegion(
   x: Int = 0,
